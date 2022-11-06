@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #131313;
+    --bg-color-alt: #0d0d0d;
+    --text-color: #fff;
+    --text-color-alt: rgb(184, 184, 184);
+    --accent-color: #ac10db;
+    --accent-color-alt: #0095df;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+div#container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    width: 50vw;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+i.devicon {
+    font-size: 0.8em;
+    margin: 2px;
+    padding: 2px;
+}
+
+i.devicon:hover,
+ul>li:hover {
+    color: var(--accent-color);
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul>li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-color-alt);
+    font-size: 1.2em;
+}
+
+#name,
+#age {
+    color: var(--accent-color);
+}
