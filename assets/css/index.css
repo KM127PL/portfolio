@@ -48,6 +48,30 @@ div#container {
     width: 50vw;
 }
 
+#back {
+    font-size: 1.2rem;
+    font-family: 'Poppins', monospace;
+    color: var(--accent-color);
+
+}
+
+#code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+div#error-container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 90vw;
+}
+
 .title {
     font-size: 2.5em;
     font-weight: 700;
