@@ -15,7 +15,7 @@
     --accent-color-alt: #0095df;
 }
 
-body.light-mode {
+body.theme-light {
     --bg-color: var(--bg-color-light);
     --bg-color-alt: var(--bg-color-light-alt);
     --text-color: var(--text-color-light);
@@ -25,7 +25,7 @@ body.light-mode {
 }
 
 
-body.dark-mode {
+body.theme-dark {
     --bg-cl: var(--bg-color);
     --bg-cl-alt: var(--bg-color-alt);
     --tx-cl: var(--text-color);
@@ -59,7 +59,7 @@ div#container {
 .fa-moon {
     color: #131313;
 }
-#dark-mode-toggle {
+#theme-button {
     position: absolute;
     top: 0.5em;
     right: 0.5em;

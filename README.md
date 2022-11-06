@@ -1,10 +1,11 @@
 # My Portfolio [![Pages](https://github.com/KM127PL/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/KM127PL/portfolio/actions/workflows/pages/pages-build-deployment)
-This is my portfolio. It uses plain-old HTML and CSS. It is hosted on GitHub Pages.
+This is my portfolio. It uses HTML, CSS and TypeScript. It is hosted on GitHub Pages.
 
 ## How to run
 1. Clone the repository
-2. Open `index.html` in your browser
-3. Yes, that's it.
+2. Install typescript with `npm install -g typescript`
+3. Run `tsc` to compile the TypeScript files
+4. Open `index.html` in your browser
 
 ## How to contribute
 1. Fork the repository

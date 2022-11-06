@@ -1,0 +1,13 @@
+{
+    "files": [
+        "assets/ts/theme.ts"
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "assets/js/",
+        "baseUrl": ".",
+    }
+}
