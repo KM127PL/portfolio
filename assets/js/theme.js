@@ -1,6 +1,6 @@
 function setTheme(theme) {
     // update the body
-    var body = document.body;
+    var body = document.getElementsByTagName('body')[0];
     body.classList.remove('theme-light', 'theme-dark');
     body.classList.add("theme-".concat(theme));
     // update the button

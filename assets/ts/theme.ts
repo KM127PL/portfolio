@@ -1,13 +1,13 @@
 
 function setTheme(theme: string) {
     // update the body
-    const body = document.body;
+    const body : HTMLElement = document.getElementsByTagName('body')[0];
     body.classList.remove('theme-light', 'theme-dark');
     body.classList.add(`theme-${theme}`);
 
     // update the button
-    const button = document.getElementById('theme-icon');
-    
+    const button : HTMLElement = document.getElementById('theme-icon');
+
     if (button) { 
         button.classList.remove('fa-sun', 'fa-moon');
         button.classList.add(theme === 'light' ? 'fa-moon' : 'fa-sun');
