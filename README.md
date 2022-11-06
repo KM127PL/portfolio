@@ -19,3 +19,4 @@ Everything in the `assets` folder is licensed under the [Creative Commons Attrib
 * [Devicon](https://devicon.dev/)
 * [Google Fonts](https://fonts.google.com/)
 * [Unsplash](https://unsplash.com/)
+* [Font Awesome](https://fontawesome.com/)

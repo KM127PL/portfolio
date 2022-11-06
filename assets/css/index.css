@@ -1,15 +1,41 @@
 :root {
     --bg-color: #131313;
     --bg-color-alt: #0d0d0d;
+
+    --bg-color-light: #ebebeb;
+    --bg-color-light-alt: #c2c2c2;
+
     --text-color: #fff;
     --text-color-alt: rgb(184, 184, 184);
+
+    --text-color-light: #000;
+    --text-color-light-alt: #0d0d0d;
+
     --accent-color: #ac10db;
     --accent-color-alt: #0095df;
 }
 
-body {
+body.light-mode {
+    --bg-color: var(--bg-color-light);
+    --bg-color-alt: var(--bg-color-light-alt);
+    --text-color: var(--text-color-light);
+    --text-color-alt: var(--text-color-light-alt);
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+
+body.dark-mode {
+    --bg-cl: var(--bg-color);
+    --bg-cl-alt: var(--bg-color-alt);
+    --tx-cl: var(--text-color);
+    --tx-cl-alt: var(--text-color-alt);
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 div#container {
@@ -18,7 +44,7 @@ div#container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 98vh;
+    height: 90vh;
     width: 50vw;
 }
 
@@ -30,6 +56,22 @@ div#container {
     padding: 0;
 }
 
+.fa-moon {
+    color: #131313;
+}
+#dark-mode-toggle {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    background-color: rgba(0,0,0,0);
+    color:white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+}
+
 i.devicon {
     font-size: 0.8em;
     margin: 2px;
@@ -39,7 +81,7 @@ i.devicon {
 i.devicon:hover,
 ul>li:hover {
     color: var(--accent-color);
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 a {
@@ -55,8 +97,8 @@ ul>li {
     list-style: none;
     margin: 0;
     padding: 0;
-
-    color: var(--text-color-alt);
+    
+    color: var(--tx-cl-alt);
     font-size: 1.2em;
 }
 
