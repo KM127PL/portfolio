@@ -1,4 +1,4 @@
-# My Portfolio
+# My Portfolio [![Pages](https://github.com/KM127PL/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/KM127PL/portfolio/actions/workflows/pages/pages-build-deployment)
 This is my portfolio. It uses plain-old HTML and CSS. It is hosted on GitHub Pages.
 
 ## How to run
@@ -19,4 +19,4 @@ Everything in the `assets` folder is licensed under the [Creative Commons Attrib
 * [Devicon](https://devicon.dev/)
 * [Google Fonts](https://fonts.google.com/)
 * [Unsplash](https://unsplash.com/)
-* [Font Awesome](https://fontawesome.com/)
+* [Font Awesome](https://fontawesome.com/) 

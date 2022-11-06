@@ -62,7 +62,7 @@ div#container {
 #dark-mode-toggle {
     position: absolute;
     top: 0.5em;
-    left: 0.5em;
+    right: 0.5em;
     background-color: rgba(0,0,0,0);
     color:white;
     border: none;
