@@ -7,8 +7,11 @@ function setTheme(theme: string) {
 
     // update the button
     const button = document.getElementById('theme-icon');
-    button.classList.remove('fa-sun', 'fa-moon');
-    button.classList.add(theme === 'light' ? 'fa-moon' : 'fa-sun');
+    
+    if (button) { 
+        button.classList.remove('fa-sun', 'fa-moon');
+        button.classList.add(theme === 'light' ? 'fa-moon' : 'fa-sun');
+    }
 
     // update local storage
     localStorage.setItem('theme', theme);
