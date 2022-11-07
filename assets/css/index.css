@@ -126,6 +126,13 @@ i.devicon:hover,
 ul>li:hover {
 	color: var(--accent-color);
 	transition: 0.5s;
+	margin-left: 10px;
+}
+
+ul>li {
+	color: var(--accent-color);
+	transition: 0.5s;
+	margin-left: -10px;
 }
 
 a {
