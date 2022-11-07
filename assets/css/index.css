@@ -14,8 +14,9 @@
 	--bittersweet: #F56960;
 	--persimmon: #F35B04;
 	--cosmic-cobalt: #3D348B;
-	
-	--color: white;
+
+	/* default color if browser has javascript disabled */
+	--color: var(--amaranth-purple);
 
 }
 
@@ -23,7 +24,7 @@ body {
 	background-image: radial-gradient(circle, #0c0c0c 1px, transparent 0);
 	background-size: 25px 25px;
 	height: 100vh;
-	margin:0;
+	margin: 0;
 	background-color: var(--bg-color);
 	color: #fff;
 }
@@ -96,7 +97,6 @@ i.devicon {
 
 i.devicon:hover,
 ul>li:hover {
-	color: var(--color);
 	transition: 0.3s;
 	margin-left: 10px;
 }
@@ -125,7 +125,9 @@ ul>li {
 }
 
 #name,
-#age {
+#age,
+i.devicon:hover,
+ul>li:hover {
 	transition: color 0.3s;
 	color: var(--color);
 	text-decoration: underline;
