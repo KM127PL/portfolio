@@ -9,5 +9,8 @@
         "sourceMap": true,
         "outDir": "assets/js/",
         "baseUrl": ".",
-    }
+		"removeComments": true,
+		"checkJs": true,
+		"newLine": "crlf"
+    },
 }

@@ -1,24 +1,21 @@
-function setTheme(theme) {
-    // update the body
-    var body = document.getElementsByTagName('body')[0];
-    body.classList.remove('theme-light', 'theme-dark');
-    body.classList.add("theme-".concat(theme));
-    // update the button
-    var button = document.getElementById('theme-icon');
-    if (button) {
-        button.classList.remove('fa-sun', 'fa-moon');
-        button.classList.add(theme === 'light' ? 'fa-moon' : 'fa-sun');
-    }
-    // update local storage
-    localStorage.setItem('theme', theme);
-}
-function toggleTheme() {
-    var theme = localStorage.getItem('theme') || 'light';
-    setTheme(theme === 'light' ? 'dark' : 'light');
-}
 document.addEventListener('DOMContentLoaded', function () {
-    var theme = localStorage.getItem('theme') || 'light';
-    setTheme(theme);
+    UpdateRandomColor();
 });
-// Path: src\index.ts
+document.addEventListener("keydown", function (ev) {
+    if (ev.code == "Space") {
+        UpdateRandomColor();
+    }
+});
+function UpdateRandomColor() {
+    var colors = ["amaranth-purple", "cinnammon-satin", "green", "cyan-process", "fuchsia", "lavender-floral", "middle-red", "bittersweet", "persimmon", "cosmic-cobalt"];
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    var root = document.documentElement;
+    root.style.setProperty("--color", "var(--".concat(randomColor, ")"));
+    console.log("Setting random color to ".concat(randomColor));
+    return randomColor;
+}
+function GetCurrentColor() {
+    var root = document.documentElement;
+    return getComputedStyle(root).getPropertyValue("--color");
+}
 //# sourceMappingURL=theme.js.map
