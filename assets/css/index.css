@@ -1,61 +1,30 @@
 :root {
-	--bg-color: #131313;
-	--bg-color-alt: #0d0d0d;
+	--bg-color: #020202;
+	--bg-color-alt: #0A0A0A;
 
-	--bg-color-light: #efefef;
-	--bg-color-light-alt: #e7e7e7;
+	--raisin-black: #1E212B;
+	--indigo-dye: #284B63;
+	--amaranth-purple: #B6244F;
+	--cinnammon-satin: #D36582;
+	--green: #64B6AC;
+	--cyan-process: #11B5E4;
+	--fuchsia: #CC4BC2;
 
-	--text-color: #fff;
-	--text-color-alt: rgb(235, 235, 235);
-
-	--text-color-light: #000;
-	--text-color-light-alt: #0d0d0d;
-
-	--accent-color: #ac10db;
-	--accent-color-alt: #0095df;
 }
 
-#dob {
-	visibility: hidden;
-	position: absolute;
-	z-index: 1;
-	width: 100px;
-	color: var(--bg-color);
-	font-size: 12px;
-	background-color: rgba(0, 0, 0, 0.8);
-
-	border-radius: 4px;
-	padding: 4px 4px 4px 4px;
-	text-align: center;
-	margin-left: 10px;
-	transition: 0.25s all ease;
+body {
+	background-image: radial-gradient(circle at 1px 1px, #0c0c0c 1px, transparent 0);
+	background-size: 25px 25px;
+	height: 100vh;
+	margin:0;
+	background-color: var(--bg-color);
+	color: #fff;
 }
 
-#age:hover #dob {
+#age {
 	visibility: visible;
 }
 
-
-body.theme-light {
-	--bg-color: var(--bg-color-light);
-	--bg-color-alt: var(--bg-color-light-alt);
-	--text-color: var(--text-color-light);
-	--text-color-alt: var(--text-color-light-alt);
-	background-color: var(--bg-color-light);
-	color: var(--text-color-light);
-	transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-
-body.theme-dark {
-	--bg-cl: var(--bg-color);
-	--bg-cl-alt: var(--bg-color-alt);
-	--tx-cl: var(--text-color);
-	--tx-cl-alt: var(--text-color-alt);
-	background-color: var(--bg-color);
-	color: var(--text-color);
-	transition: background-color 0.5s ease, color 0.5s ease;
-}
 
 div#container {
 	font-family: 'Roboto', sans-serif;
@@ -63,15 +32,24 @@ div#container {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 90vh;
+	height: 98vh;
+	width: 60vw;
+}
+
+div#container-projects {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
 	width: 50vw;
 }
 
 #back {
 	font-size: 1.2rem;
 	font-family: 'Poppins', monospace;
-	color: var(--accent-color);
-
+	color: var(--amaranth-purple);
 }
 
 #code {
@@ -103,19 +81,6 @@ div#error-container {
 	color: #131313;
 }
 
-#theme-button {
-	position: absolute;
-	top: 0.5em;
-	right: 0.5em;
-	background-color: rgba(0, 0, 0, 0);
-	color: white;
-	border: none;
-	cursor: pointer;
-	font-size: 1.5em;
-	width: 2em;
-	height: 2em;
-}
-
 i.devicon {
 	font-size: 0.8em;
 	margin: 2px;
@@ -124,14 +89,13 @@ i.devicon {
 
 i.devicon:hover,
 ul>li:hover {
-	color: var(--accent-color);
-	transition: 0.5s;
+	color: var(--amaranth-purple);
+	transition: 0.3s;
 	margin-left: 10px;
 }
 
 ul>li {
-	color: var(--accent-color);
-	transition: 0.5s;
+	transition: 0.3s;
 	margin-left: -10px;
 }
 
@@ -140,7 +104,7 @@ a {
 	color: unset;
 }
 
-a:hover {
+ul>li a:hover {
 	text-decoration: underline;
 }
 
@@ -149,12 +113,12 @@ ul>li {
 	margin: 0;
 	padding: 0;
 
-	color: var(--tx-cl-alt);
+	color: #fff;
 	font-size: 1.2em;
 }
 
 #name,
 #age {
-	color: var(--accent-color);
+	color: var(--amaranth-purple);
 	text-decoration: underline;
 }
